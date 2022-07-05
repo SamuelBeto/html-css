@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tag's</title>
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@900&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+        body{
+            font: normal 1.2em 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-color: #832161;
+        }
+
+        /*header*/
+        header{
+            color:white;
+            background-color: #011936;
+            padding: 10px;
+            margin: -8px -8px 0px -8px;
+            text-align: center;
+        }
+
+        .menu {
+            font: normal 2em 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-color: #FFCF00 ;
+            margin: -8px;
+            text-align: left;
+        }
+
+        .menu > div > ul {
+            display: none;
+        }
+
+        .menu > div:hover> ul {
+            display: block
+        }
+
+        .menu > div:hover{
+            background-color: #d4ad00;
+        }
+        .menu > div > p{
+            display: inline;
+            margin: 0px 40px 0px 40px;
+        }
+
+        .menu > div {
+            display: inline-table;
+            margin: 0px -5px 0px 0px;
+        }
+
+        a{
+            font: 700 1em 'Noto Sans JP', sans-serif;;
+            text-decoration: none;
+            color: #0E79B2;
+        }
+
+        a:active{
+            font-weight: 800;
+            color: #074769;
+        }
+
+       /* _________________ main*/
+
+       main{
+           padding: 0px 30px;
+           margin: 0px auto;
+       }
+
+        .assuntos{
+            background-color: white;
+            text-align: center;
+            padding: 15px 15px;
+            
+        }
+
+        .assuntos > article{
+            margin: 5px 5px;
+            padding: 10px 10px;
+            box-shadow: 1px 1px 5px #000000;
+            border-radius: 10px;
+        }
+
+        .assuntos > article > blockquote {
+            background-color: #ffcad4b2;
+        }
+
+        .assuntos > article > aside::before{
+            content: "Autor: ";
+        }
+
+        .novos-artigos{
+            background-color: #c7ebff;
+            padding: 30px;
+        }
+
+        .novos-artigos > ol{
+            margin: 30px;
+        }
+        
+        .redes{
+            background-color: #d4ad00;
+            height: 250px;
+            margin: 10px -8px -20px -8px;
+            padding: 40px;
+        }
+
+        .redes > ul > li{
+            padding: 10px 0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="menu">
+            <div>
+                <p>Menu</p>
+                    <ul type="none">
+                        <li><a href="#">Bla</a></li>
+                        <li><a href="#">Bla</a></li>
+                        <li><a href="#">Bla</a></li>
+                        <li><a href="#">Bla</a></li>
+                    </ul>
+            </div>
+            <div>
+                <p>Menu</p>
+                    <ul type="none">
+                        <li><a href="#">Ble</a></li>
+                        <li><a href="#">Ble</a></li>
+                        <li><a href="#">Ble</a></li>
+                        <li><a href="#">Ble</a></li>
+                    </ul>
+            </div>
+
+        </nav>
+        <h1>
+            Título 1
+        </h1>
+    </header>
+    <main>
+
+        <section>
+
+            <article class="assuntos">
+
+                <article>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis ullam nemo dolorum dolor temporibus ipsum id? Impedit perferendis tenetur doloribus est sunt minima dolore, neque ex iste deserunt illum aliquid?</p>
+
+                    <blockquote cite="#">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore sunt cum blanditiis Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eum, provident voluptates eius accusantium error vero tempore consequuntur quos beatae pariatur accusamus veniam fugiat architecto quis. Distinctio aspernatur dolore adipisci?provident velit ducimus mollitia ratione ipsum accusantium. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Culpa doloremque
+                        </p>
+                    </blockquote>
+    
+                    <p>saepe quae recusandae fuga aliquid eum labore repellendus ea accusamus corporis placeat eius doloribus porro reiciendis ad necessitatibus iste maxime. Iusto quaerat et, modi voluptate illum iste ut ullam earum maiores?
+                    <aside>Eu mesmo</aside></p>
+
+                </article>
+
+            </article>
+            <article class="novos-artigos">
+                    <p>Os mais vistos</p>
+                <ol>
+                    <li>
+                        <dt><a href="#">Assunto Novo</a></dt>
+                        <dd>Muito intrigante</dd>
+                    </li>
+                    <li>
+                        <dt><a href="#">Assunto Novo</a></dt>
+                        <dd>Muito intrigante</dd>
+                    </li>
+                    <li>
+                        <dt><a href="#">Assunto Novo</a></dt>
+                        <dd>Muito intrigante</dd>
+                    </li>
+                    <li>
+                        <dt><a href="#">Assunto Novo</a></dt>
+                        <dd>Muito intrigante</dd>
+                    </li>
+                </ol>
+                <img src="gif/villager dançando[.gif" alt="villager">
+            </article>
+        </section>
+    </main>
+    <footer class="redes">
+        <ul>
+            <li>
+                <a href="#">
+                    <abbr title = "Youtube">Link</abbr>
+                </a>
+            </li><li>
+                <a href="#">
+                    <abbr title = "Youtube">Link</abbr>
+                </a>
+            </li><li>
+                <a href="#">
+                    <abbr title = "Youtube">Link</abbr>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <abbr title = "Youtube">Link</abbr>
+                </a>
+            </li>
+        </ul>
+    </footer>
+</body>
+</html>

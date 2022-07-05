@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatando Link</title>
+</head>
+<style>
+
+    a{
+        color: blue;
+        font-family: Arial, Helvetica, sans-serif;
+        text-decoration: none;
+    }
+
+    a:active{
+        font-weight: bolder;
+        color: rgb(106, 106, 255);
+    }
+
+    .especial{
+        font-weight: bold;
+        background-color: rgb(193, 255, 201);
+    }
+
+    .especial:active{
+        color: chartreuse;
+    }
+
+    .especial::before{
+        content: '⇒ ';
+    }
+
+    .especial::after{
+        content: '⇐ ';
+    }
+
+</style>
+<body>
+    <h1>Link's Importnates </h1>
+    <ul>
+        <li><a href="https://br.pinterest.com/" target="_blank" rel="external">Pinterest</a></li>
+        <li><a href="https://www.youtube.com/" target="_blank" rel="external" class="especial">Youtube</a></li>
+        <li><a href="https://mail.google.com" target="_blank" rel="external" class="especial">Gmail</a></li>
+    <ul>
+</body>
+</html>

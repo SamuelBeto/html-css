@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Classes: houver</title>
+    <style>
+        div{
+            display: inline-table;
+            border: 1em solid black;
+            text-align: center;
+            width: 300px;
+            height: 300px;
+            background-color: rgb(255, 140, 140);
+        }
+
+        div:hover{
+            background-color: chartreuse;
+        }
+
+        div:hover > p{
+            display: block;
+            background-color: black;
+            color: red;
+            width: 100px;        
+        }
+
+        div > p{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        01
+            <p>PEI</p>
+    </div>
+    <div>
+        02
+            <p>PAO</p>
+    </div>
+    <div>
+        03
+            <p>POU</p>
+    </div>
+</body>
+</html>

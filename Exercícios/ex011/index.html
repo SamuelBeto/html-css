@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Mídias em HTML</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>Tente abrir este site em dispositivos diferentes ou fique mudadndo o tamanho do navegador</p>
+
+    <picture>
+        <source media="(max-width: 725px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1025px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem-dinamica">
+    </picture>
+    <p>max</p>
+    <hr>
+    <picture>
+        <source media="(min-width: 1025px)" srcset="imagens/foto-g.png" type="image/png">  
+        <source media="(min-width: 725px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-p.png" alt="imagem-dinamica">
+    </picture>
+    <p>min</p>
+    <hr>
+    <p>Áudio em HTML</p>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="guanacast-33.mp3" type="audio/mpeg">
+        
+    </audio>
+    <p>Se vc n conseguir tocar, <a href="guanacast-33.mp3" download="guanacast-33.mp3" type="audio/mpeg">baixe aqui</a></p>
+</body>
+</html>
