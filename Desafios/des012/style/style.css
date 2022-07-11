@@ -11,13 +11,15 @@ div{
     width: 100%;
 }
 header{
-    font: normal 1.2em 'Passion One', cursive;
+    padding: 50px;
+    font: normal 10vmin 'Passion One', cursive;
     background-color: black;
     color: white;
     text-align: center;
 }
 header p{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 0.3em;
 }
 header a{
     text-decoration: none;
@@ -28,11 +30,25 @@ header a:hover{
     text-decoration: underline;
 }
 
+main{
+    font-size: 5vmin;
+}
+main div{
+    padding: 10vmin;
+}
+main p{
+    display: inline-block;
+    padding: 3%;
+}
 div.branco{
     background-color: white;
+    box-shadow: 10px 5px 5px black;
 }
 div.imagens{
     color:white
+}
+div.imagens p{
+    background-color: rgba(0, 0, 0, 0.336);
 }
 div#flor{
     background-image: url(../imagens/background001.jpg);
@@ -42,9 +58,18 @@ div#papel{
 }
 
 footer{
+    padding: 10px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: black;
     color: white;
     text-decoration: none;
     text-align: center;
+}
+footer a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+footer a:hover{
+    text-decoration: underline;
 }
