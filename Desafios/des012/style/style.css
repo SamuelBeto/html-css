@@ -4,9 +4,11 @@
     margin: 0px;
     padding: 0px;
 }
+
 body{
     font: normal 1.2em 'Sriracha', cursive;
 }
+
 header{
     padding: 50px;
     font: normal 10vmin 'Passion One', cursive;
@@ -39,10 +41,10 @@ main p{
 }
 div.branco{
     background-color: white;
-    box-shadow: 10px 5px 5px black;
 }
 div.imagens{
     color:white;
+    box-shadow: inset 1px 1px 5px black;
     background-size: cover;
     background-position: right bottom;
     background-attachment: fixed;
