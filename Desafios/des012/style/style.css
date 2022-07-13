@@ -51,6 +51,7 @@ div.imagens{
 }
 div.imagens p{
     background-color: rgba(0, 0, 0, 0.336);
+    text-shadow: 1px 1px 3px black;
 }
 div#flor{
     background-image: url(../imagens/background001.jpg);
