@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+/*Estilo para Telas*/
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font: normal 1.2em 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header{
+    background-color: lightgray;
+}
+header h1{
+    font-size: 3em;
+    padding: 10px;
+    text-align: center;
+}
+menu{
+    background-color: gray;
+}
+menu ul{
+    list-style-type: none;
+}
+menu li{
+    display: inline-block;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.466);
+    padding: 10px;
+}
+main{
+    max-width: 620px;
+    padding: 20px;
+    display: block;
+    margin: auto;
+}
+main h2{
+    padding-bottom: 20px;
+}
+main p{
+    line-height: 1.5em;
+}
+footer{
+    text-align: center;
+    font-weight: bold;
+}

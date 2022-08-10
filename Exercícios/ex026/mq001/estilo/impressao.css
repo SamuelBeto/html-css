@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+/*Estilo para Impressão*/
+
+*{
+    padding: 10px;
+    margin: 10px;
+}
+
+body{
+    font:normal 1.5em Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.5em;
+}
+
+menu{
+    display: none;
+}
