@@ -1,0 +1,88 @@
+@charset "UTF-8";
+
+/* Extra small devices (phones, 600px and down) */
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Medium devices (landscape tablets, 768px and up) */
+/* Large devices (laptops/desktops, 992px and up) */
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+
+@media print /*impressões*/{
+
+    main{
+        border: 2px solid black;
+        border-radius: 10px;
+        color: black;
+        text-align: center;
+        font: normal 1.2em 'Courier New', Courier, monospace;
+        text-shadow: none;
+    }
+    main::after{
+        content: "Site feito por www.cursoemvideo.com";
+        text-decoration: overline;
+    }
+
+    img#pc{display: none;}
+    img#phone{display: none;}
+    img#print{
+        display: block;
+        margin: auto;
+    }
+    img#tablet{display: none;}
+    img#tv{display: none;}
+}
+
+@media screen and (min-width: 600px) and (max-width:850px) /*tablet*/ {
+    body{
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+
+    main h1{
+        text-align: center;
+    }
+
+    img#pc{display: none;}
+    img#phone{display: none;}
+    img#print{display: none;}
+    img#tablet{
+        display: block;
+        margin: auto;
+    }
+    img#tv{display: none;}
+}
+
+@media screen and (min-width: 850px) and (max-width: 1200px) /*computador*/ {
+    body{
+        background-image: url(../imagens/back-pc.jpg);
+    }
+    main h1{
+        text-align: center;
+    }
+
+    img#pc{
+        display: block;
+        margin: auto;
+    }
+    img#phone{display: none;}
+    img#print{display: none;}
+    img#tablet{display: none;}
+    img#tv{display: none;}
+}
+
+@media screen and (min-width:1200px) /*grande porte*/ {
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+    }
+    main h1{
+        text-align: center;
+    }
+
+    img#pc{display: none;}
+    img#phone{display: none;}
+    img#print{display: none;}
+    img#tablet{display: none;}
+    img#tv{
+        display: block;
+        margin: auto;
+    }
+}

@@ -26,6 +26,10 @@ main{
     border-radius: 10px;
 }
 
+main h1{
+    text-align: center;
+}
+
 img#pc{display: none;}
 
 img#phone{
